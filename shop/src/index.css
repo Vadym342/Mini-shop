@@ -17,6 +17,10 @@ body {
     margin: 50px auto;
 }
 
+header {
+    position: relative;
+}
+
 header .logo {
     font-weight: 600;
     font-size: 20px;
@@ -36,6 +40,30 @@ header ul.nav li {
 
 header ul.nav li:hover {
     opacity: 0.5;
+}
+
+header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+    color: #dc3d3d;
+    transform: scale(1.5);
+}
+
+header .shop-cart {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 450px;
+    min-height: 100px;
+    background: #fafafa;
+    -webkit-box-shadow: 4px 1px 15px 3px #C0B4B5;
+    box-shadow: 4px 1px 15px 3px #C0B4B5;
+    z-index: 1000;
 }
 
 header .presentation {
@@ -105,7 +133,7 @@ main b {
     color: #333;
 }
 
-main .add-to-cart{
+main .add-to-cart {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -122,13 +150,13 @@ main .add-to-cart{
 
 }
 
-main .add-to-cart:hover{
+main .add-to-cart:hover {
     transform: scale(1.5) translateY(-5px);
-    
+
 }
 
-main b{
-    color:cadetblue;
+main b {
+    color: cadetblue;
 }
 
 footer {
