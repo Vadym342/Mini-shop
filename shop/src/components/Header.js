@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import Order from './Order';
 
 export default function Header(props) {
-    let [cartOpen, setCartOpen] = useState(false)
+    const [cartOpen, setCartOpen] = useState(false);
 
     return (
         <header>
